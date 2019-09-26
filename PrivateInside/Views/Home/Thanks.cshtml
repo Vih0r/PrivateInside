@@ -1,0 +1,28 @@
+﻿@model PrivateInside.Models.GuestResponse
+
+@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+</head>
+<body>
+    <p>
+        <h1>pasiba, @Model.Name!</h1>
+        @if (Model.WillAttend == true)
+        {
+            @:zaebis sto prides
+        }
+        else
+        {
+            @:nu i nahuy ti ne nuzen
+        }
+    </p>
+    <p>
+        Click<a asp-action="ListResponse">zdes</a> stob znat kto ti
+    </p>
+</body>
+</html>
